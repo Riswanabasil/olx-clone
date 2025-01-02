@@ -13,6 +13,7 @@ const Login = (props:popupProp) => {
     const googleSignIn= async ()=>{
         try {
             await signInWithPopup(auth,googleProvider)
+            console.log("logged")
         } catch (error) {
             console.error(error)
         }
